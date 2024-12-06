@@ -1,0 +1,43 @@
+/* Navbar */
+.custom-underline {
+  position: relative;
+  text-decoration: none;
+  border-radius: 5px;;
+}
+
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  width: 80%; 
+  height: 2px; 
+  background-color: currentColor;
+  bottom: -2px;
+  left: 10%;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.custom-underline:hover::after {
+  width: 100%; 
+  left: 0; 
+}
+
+.not-underline:hover::after {
+  width: 0%; 
+  left: 0; 
+}
+
+.active-underline::after {
+  background-color: yellowgreen; 
+}
+
+.bg-img {
+  background-image: url('../assets/images/homeBanner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  filter: blur(5px);
+  /* position: fixed; */
+  /* z-index: -1; */
+}
