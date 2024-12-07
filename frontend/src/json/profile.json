@@ -1,0 +1,13 @@
+{
+  "name": "John Doe",
+  "email": "example@email.com",
+  "phone": "123-456-7890",
+  "avatar": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+  "age": 30,
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+    }
+}

@@ -5,7 +5,6 @@ import NotFound from './notFound.jsx'
 import Navbar from './components/navbar.jsx'
 import Footer from './components/footer.jsx'
 import Home from './pages/home.jsx'
-import Booking from './pages/booking.jsx'
 import Login from './pages/login.jsx'
 import Register from './pages/register.jsx'
 import Profile from './pages/profile.jsx'
@@ -25,11 +24,10 @@ createRoot(document.getElementById('root')).render(
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/booking" element={<Booking />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/buy/:id" element={<Buy />} />
+        <Route path="/buy" element={<Buy />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/movies/:id" element={<Movie />} />
         <Route path="/dashboard/admin" element={<AdminDashboard />} />
@@ -40,5 +38,5 @@ createRoot(document.getElementById('root')).render(
       </Routes>
       <Footer />
     </Router>
-  </StrictMode>,
+  </StrictMode>
 )
