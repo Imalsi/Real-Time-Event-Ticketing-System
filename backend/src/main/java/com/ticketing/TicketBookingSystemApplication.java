@@ -12,6 +12,7 @@ public class TicketBookingSystemApplication {
      * @param args command-line arguments
      */
     public static void main(String[] args) {
+        //This will start the application
         SpringApplication.run(TicketBookingSystemApplication.class, args);
     }
 }
